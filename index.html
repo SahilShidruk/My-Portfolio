@@ -6,10 +6,88 @@
   <meta name="viewport" content="width=device-width">
   <title>Sahil Shidruk</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-  Coming Soon...
+  <!-- This is the logo -->
+    <header>
+        <img class="Logo" src="assets/logo.png" alt="Logo">
+        <!-- End of logo section -->   
+      <!-- Navbar -->
+      <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+      </nav>
+      <!-- End of navbar -->
+    </header>
+  <!-- End of header -->
+
+  <!-- Home section -->
+  <section id="home" class="home">
+    <div class="home-content">
+   <img src="assets/image.png" alt="Sahil"/>
+      <h1>Hi, It's <span>Sahil</span></h1>
+      <h3>I'm a <span>Web Developer</span></h3>
+      <button id="dc" class="dc">Discord</button>
+      <button id="gh" class="gh">Github</button>
+    </div>
+  </section>
+  <!-- End of home section -->
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content">
+      <h1>About</h1>
+      <br>
+      <p>Hi, I'm Sahil Shidruk from India. <br> I am a student studying in Class 12th.</p>
+    </div>
+  </section>
+  <!-- End of About Section -->
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="projects-content">
+      <h1>Projects</h1>
+      <div class="project-1">
+        <img src="assets/prisma.png" alt="prisma">
+        <h3>Prisma Bot</h3>
+        <p>A Multipurpose Discord Bot With 50+ Commands. It has built-in features like Auto-Moderation, Ticket and Many More.</p>
+        <button id="prismaview">View</button> 
+        <button id="prismagit">Source Code</button>
+      </div>
+      <div class="project-2">
+        <img src="assets/logo.png" alt="portfolio">
+        <h3>My Portfolio</h3>
+        <p>This is my first project on HTML, CSS, and JS. It was created on mobile using Replit.</p>
+        <button id="portfoliogit">Source Code</button>
+      </div>
+    </div>
+  </section>
+  <!-- End of Projects Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h1>Contact</h1>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <!-- End of Contact Section -->
+
   <script src="script.js"></script>
 </body>
 
