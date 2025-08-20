@@ -1,94 +1,118 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Sahil Shidruk</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- This is the logo -->
-    <header>
-        <img class="Logo" src="assets/logo.png" alt="Logo">
-        <!-- End of logo section -->   
-      <!-- Navbar -->
-      <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil Shidruk | Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar container">
+        <div class="logo-area">
+          <img
+            src="assets/logo.png"
+            alt="Logo"
+            class="logo"
+            height="40"
+            width="40"
+          />
+          <span class="brand">Sahil</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
       </nav>
-      <!-- End of navbar -->
     </header>
-  <!-- End of header -->
-
-  <!-- Home section -->
-  <section id="home" class="home">
-    <div class="home-content">
-   <img src="assets/image.png" alt="Sahil"/>
-      <h1>Hi, It's <span>Sahil</span></h1>
-      <h3>I'm a <span>Web Developer</span></h3>
-      <button id="dc" class="dc">Discord</button>
-      <button id="gh" class="gh">Github</button>
-    </div>
-  </section>
-  <!-- End of home section -->
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="about-content">
-      <h1>About</h1>
-      <br>
-      <p>Hi, I'm Sahil Shidruk from India. <br> I am a student studying in Class 12th.</p>
-    </div>
-  </section>
-  <!-- End of About Section -->
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="projects-content">
-      <h1>Projects</h1>
-      <div class="project-1">
-        <img src="assets/prisma.png" alt="prisma">
-        <h3>Prisma Bot</h3>
-        <p>A Multipurpose Discord Bot With 50+ Commands. It has built-in features like Auto-Moderation, Ticket and Many More.</p>
-        <button id="prismaview">View</button> 
-        <button id="prismagit">Source Code</button>
-      </div>
-      <div class="project-2">
-        <img src="assets/logo.png" alt="portfolio">
-        <h3>My Portfolio</h3>
-        <p>This is my first project on HTML, CSS, and JS. It was created on mobile using Replit.</p>
-        <button id="portfoliogit">Source Code</button>
-      </div>
-    </div>
-  </section>
-  <!-- End of Projects Section -->
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="contact-content">
-      <h1>Contact</h1>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-      </br>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
-  <!-- End of Contact Section -->
-
-  <script src="script.js"></script>
-</body>
-
+    <main>
+      <section id="home" class="hero-section container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="accent">Sahil Shidruk</span></h1>
+            <h2 class="subtitle">Web Developer & Student</h2>
+            <p>
+              Building modern web experiences and cool bots. Welcome to my
+              portfolio!
+            </p>
+            <div class="hero-socials">
+              <a
+                href="https://github.com/SahilShidruk"
+                target="_blank"
+                aria-label="Github"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://discord.com/invite/fRQpnxk5FC"
+                target="_blank"
+                aria-label="Discord"
+                ><i class="bx bxl-discord-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="assets/image.png" alt="Sahil" />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <b>Sahil Shidruk</b> from India.<br />I'm a passionate student
+          (Class 12th) and web developer who loves building creative projects
+          and learning new tech. I enjoy working on bots, web apps, and sharing
+          knowledge with the community.
+        </p>
+      </section>
+      <section id="projects" class="projects-section container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="assets/prisma.png" alt="EchoTranslate bot logo" />
+            <h3>EchoTranslate</h3>
+            <p>
+              A Discord bot that automatically translates messages sent by users.
+            </p>
+            <div class="project-links">
+              <a href="/echotranslate/privacy.html" class="btn" target="_blank"
+                >Privacy & Terms</a
+              >
+              <a
+                href="https://github.com/SahilShidruk/EchoTranslate"
+                class="btn"
+                target="_blank"
+                >Source</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/logo.png" alt="portfolio logo" />
+            <h3>My Portfolio</h3>
+            <p>
+              This is my first project on HTML, CSS, and JS. It was created on
+              mobile using Replit.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/SahilShidruk/My-Portfolio"
+                class="btn"
+                target="_blank"
+                >Source</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <p>&copy; 2025 Sahil Shidruk. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
